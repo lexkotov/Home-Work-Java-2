@@ -1,0 +1,75 @@
+{
+  "id": "c8f44f48-6459-4d31-a847-71665b2d9c8a",
+  "version": "2.0",
+  "name": "Rest",
+  "url": "https://gb.ru",
+  "tests": [{
+    "id": "04e31539-3078-486e-b320-ef2d34538a69",
+    "name": "www",
+    "commands": [{
+      "id": "4d7551b3-fe08-4602-8e73-5acba5a0cb08",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ff04bf6a-5a44-40f3-a4bc-64e3c4cf31ea",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1346x713",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6166cffb-f496-48f7-87a9-6487048082c5",
+      "comment": "",
+      "command": "click",
+      "target": "id=user_email",
+      "targets": [
+        ["id=user_email", "id"],
+        ["name=user[email]", "name"],
+        ["css=#user_email", "css:finder"],
+        ["xpath=//input[@id='user_email']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/form/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "733d49da-5d92-4970-aed2-22badafa17aa",
+      "comment": "",
+      "command": "type",
+      "target": "id=user_email",
+      "targets": [
+        ["id=user_email", "id"],
+        ["name=user[email]", "name"],
+        ["css=#user_email", "css:finder"],
+        ["xpath=//input[@id='user_email']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div/input", "xpath:idRelative"],
+        ["xpath=//div[7]/div/form/div/input", "xpath:position"]
+      ],
+      "value": "lex.kotov93@mail.ru"
+    }, {
+      "id": "57c9d7da-6997-45db-8a80-a9c53c1466aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn-success",
+      "targets": [
+        ["css=.btn-success", "css:finder"],
+        ["xpath=//input[@value='Войти']", "xpath:attributes"],
+        ["xpath=//form[@id='new_user']/div[4]/input", "xpath:idRelative"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "42d0f3c0-5a77-46cd-bb0d-cbac7c57a2c8",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["04e31539-3078-486e-b320-ef2d34538a69"]
+  }],
+  "urls": ["https://gb.ru/"],
+  "plugins": []
+}
